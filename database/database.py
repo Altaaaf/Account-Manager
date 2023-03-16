@@ -52,6 +52,7 @@ class AccountDatabase:
         Base.metadata.create_all(self.engine)
         self.session = sessionmaker(bind=self.engine)
         os.makedirs("backup", exist_ok=True)
+        os.makedirs("keys", exist_ok=True)
 
         @event.listens_for(self.engine, "commit")
         def backup_database(*args):
