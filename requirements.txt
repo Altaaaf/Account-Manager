@@ -1,2 +1,4 @@
 PyQt5==5.15.9
 SQLAlchemy==2.0.5.post1
+pyqtdarktheme==2.1.0
+cryptography==39.0.2
